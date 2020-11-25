@@ -50,8 +50,8 @@ router.get('/new', (req, res) => {
         console.log("result found", result);
         console.log(result.short_url)
         res.json({
-          "original_url": result[0]['original_url'], 
-          "short_url": result[0]['short_url']
+          original_url : result[0]['original_url'], 
+          short_url : result[0]['short_url']
         })
 
       } else {
